@@ -1,0 +1,20 @@
+* {
+	margin: 0;	
+	padding: 0;\
+}
+
+.grid { 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	grid-template-rows: 1fr 1fr 1fr 
+	1fr;
+
+	grid-template-areas: 
+	"title title"
+	"header header"
+	"sidebar sidebar"
+	"content content"
+	"footer footer"
+	grid-gap : 10px;
+}
