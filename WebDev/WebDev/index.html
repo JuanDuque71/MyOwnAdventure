@@ -1,29 +1,42 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,
-	initial-scale=1.0">
-	<link rel="stylesheet" href="style.css"
-</head>
-
-<head>
-	<title>my cat party</title>
-</head>
-
+<!doctype html>
+<title>Example</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, article, nav, div {
+  padding: 20px;
+  background: blue;
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
+</style>
 <body>
-<h1>Fun, Fun cat parties!!!</h1>
-	<p>I went to a party and there were some cool cats. They asked me if I wanted to dance. I said sure. They asked if I like square dancing or Salsa Dancing.</p>
-<img src="cat.jpg">	
-
-<div  class="grid">
-	<div class="title">	Title  </div>
-	<div class="header"> Header </div>
-	<div class="sidebar"> Sidebar </div>
-	<div class="content">Content </div>
-	<div class="footer"> Footer </div>
-
-</div>
-
-
+  <header id="pageHeader">Header</header>
+  <article id="mainArticle">Article</article>
+  <nav id="mainNav">Nav</nav>
+  <div id="siteAds">Ads</div>
+  <footer id="pageFooter">Footer</footer>
 </body>
-</html>
